@@ -1,0 +1,11 @@
+sigmod00 % mpirun -n 8 -hostfile mpi_config group
+rank= 0 newrank= 0 recvbuf= 6
+rank= 1 newrank= 1 recvbuf= 6
+rank= 6 newrank= 2 recvbuf= 22
+rank= 7 newrank= 3 recvbuf= 22
+rank= 5 newrank= 1 recvbuf= 22
+rank= 2 newrank= 2 recvbuf= 6
+rank= 3 newrank= 3 recvbuf= 6
+rank= 4 newrank= 0 recvbuf= 22
+
+//Divided to 2 groups by rank and reduce the sum of ranks in each comm.

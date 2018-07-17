@@ -1,0 +1,5 @@
+sigmod00 % mpirun -n 2 -hostfile mpi_config ./bmp
+Task 0: Received 1 char(s) from task 1 with tag 1 
+Task 1: Received 1 char(s) from task 0 with tag 1 
+
+//messages are identified by tag.

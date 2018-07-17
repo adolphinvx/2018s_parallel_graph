@@ -1,0 +1,7 @@
+sigmod00 % mpirun -n 4 -hostfile mpi_config vector
+rank= 1  b= 2.0 6.0 10.0 14.0
+rank= 2  b= 3.0 7.0 11.0 15.0
+rank= 0  b= 1.0 5.0 9.0 13.0
+rank= 3  b= 4.0 8.0 12.0 16.0
+
+//Commit a vector with block of 4 floats and stride of 4 floats,then send&recv a buffer of rowtype each time, similar to row but with STRIDE.

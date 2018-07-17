@@ -1,0 +1,11 @@
+sigmod00 % mpirun -n 8 -hostfile mpi_config struct
+rank= 1   1.00 -1.00 1.00 0.25 1 1
+rank= 2   2.00 -2.00 2.00 0.25 2 0
+rank= 3   3.00 -3.00 3.00 0.25 3 1
+rank= 4   4.00 -4.00 4.00 0.25 4 0
+rank= 5   5.00 -5.00 5.00 0.25 5 1
+rank= 6   6.00 -6.00 6.00 0.25 6 0
+rank= 0   0.00 -0.00 0.00 0.25 0 0
+rank= 7   7.00 -7.00 7.00 0.25 7 1
+
+//When commitTing a struct, define offsets, oldtype and blocksize of elements.

@@ -1,0 +1,30 @@
+sigmod00 % mpirun -n 12 -hostfile mpi_config ./hbs
+hello world! Process 0 of 12 on sigmod00
+hello world! Process 10 of 12 on sigmod00
+hello world! Process 4 of 12 on sigmod04
+hello world! Process 8 of 12 on sigmod08
+hello world! Process 11 of 12 on sigmod01
+hello world! Process 9 of 12 on sigmod09
+hello world! Process 2 of 12 on sigmod02
+hello world! Process 1 of 12 on sigmod01
+hello world! Process 3 of 12 on sigmod03
+hello world! Process 5 of 12 on sigmod05
+hello world! Process 6 of 12 on sigmod06
+Task 10 is partner with 4
+hello world! Process 7 of 12 on sigmod07
+Task 8 is partner with 2
+Task 0 is partner with 6
+MASTER:Number of MPI tasks is:12
+Task 6 is partner with 0
+Task 2 is partner with 8
+Task 4 is partner with 10
+Task 7 is partner with 1
+Task 9 is partner with 3
+Task 11 is partner with 5
+Task 3 is partner with 9
+Task 5 is partner with 11
+Task 1 is partner with 7
+
+//Since tasks are initialized in order,
+//if pid<pnum/2, fisrt send then recv,
+//else if pid>num/2, first recv then send.

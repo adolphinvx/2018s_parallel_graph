@@ -1,0 +1,35 @@
+sigmod00 % mpirun -n 16 -hostfile mpi_config topology
+rank= 10 coords= 2 2  neighbors(u,d,l,r)= 6 14 9 11
+rank= 11 coords= 2 3  neighbors(u,d,l,r)= 7 15 10 -2
+rank= 12 coords= 3 0  neighbors(u,d,l,r)= 8 -2 -2 13
+rank= 14 coords= 3 2  neighbors(u,d,l,r)= 10 -2 13 15
+rank= 0 coords= 0 0  neighbors(u,d,l,r)= -2 4 -2 1
+rank= 0                  inbuf(u,d,l,r)= -2 4 -2 1
+rank= 9 coords= 2 1  neighbors(u,d,l,r)= 5 13 8 10
+rank= 5 coords= 1 1  neighbors(u,d,l,r)= 1 9 4 6
+rank= 8 coords= 2 0  neighbors(u,d,l,r)= 4 12 -2 9
+rank= 6 coords= 1 2  neighbors(u,d,l,r)= 2 10 5 7
+rank= 3 coords= 0 3  neighbors(u,d,l,r)= -2 7 2 -2
+rank= 1 coords= 0 1  neighbors(u,d,l,r)= -2 5 0 2
+rank= 7 coords= 1 3  neighbors(u,d,l,r)= 3 11 6 -2
+rank= 15 coords= 3 3  neighbors(u,d,l,r)= 11 -2 14 -2
+rank= 13 coords= 3 1  neighbors(u,d,l,r)= 9 -2 12 14
+rank= 15                  inbuf(u,d,l,r)= 11 -2 14 -2
+rank= 3                  inbuf(u,d,l,r)= -2 7 2 -2
+rank= 10                  inbuf(u,d,l,r)= 6 14 9 11
+rank= 11                  inbuf(u,d,l,r)= 7 15 10 -2
+rank= 8                  inbuf(u,d,l,r)= 4 12 -2 9
+rank= 13                  inbuf(u,d,l,r)= 9 -2 12 14
+rank= 4 coords= 1 0  neighbors(u,d,l,r)= 0 8 -2 5
+rank= 7                  inbuf(u,d,l,r)= 3 11 6 -2
+rank= 14                  inbuf(u,d,l,r)= 10 -2 13 15
+rank= 6                  inbuf(u,d,l,r)= 2 10 5 7
+rank= 2 coords= 0 2  neighbors(u,d,l,r)= -2 6 1 3
+rank= 12                  inbuf(u,d,l,r)= 8 -2 -2 13
+rank= 1                  inbuf(u,d,l,r)= -2 5 0 2
+rank= 2                  inbuf(u,d,l,r)= -2 6 1 3
+rank= 4                  inbuf(u,d,l,r)= 0 8 -2 5
+rank= 9                  inbuf(u,d,l,r)= 5 13 8 10
+rank= 5                  inbuf(u,d,l,r)= 1 9 4 6
+
+//Questions about MPI_Cart_shift remains.

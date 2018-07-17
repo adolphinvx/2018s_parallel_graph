@@ -1,0 +1,12 @@
+sigmod00 % mpicc indexed.c -o indexed   
+sigmod00 % mpirun -n 8 -hostfile mpi_config indexed
+rank= 1  b= 6.0 7.0 8.0 9.0 13.0 14.0
+rank= 2  b= 6.0 7.0 8.0 9.0 13.0 14.0
+rank= 3  b= 6.0 7.0 8.0 9.0 13.0 14.0
+rank= 4  b= 6.0 7.0 8.0 9.0 13.0 14.0
+rank= 5  b= 6.0 7.0 8.0 9.0 13.0 14.0
+rank= 6  b= 6.0 7.0 8.0 9.0 13.0 14.0
+rank= 0  b= 6.0 7.0 8.0 9.0 13.0 14.0
+rank= 7  b= 6.0 7.0 8.0 9.0 13.0 14.0
+
+//Indexed pairs are (5,4)(12,2)

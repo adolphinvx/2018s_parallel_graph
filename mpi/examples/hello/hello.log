@@ -1,0 +1,15 @@
+sigmod00 % mpiexec -n 11 -hostfile ./mpi_config ./hello
+hello world! Process 0 of 11 on sigmod00
+MASTER:Number of MPI tasks is:11
+hello world! Process 10 of 11 on sigmod00
+hello world! Process 4 of 11 on sigmod04
+hello world! Process 1 of 11 on sigmod01
+hello world! Process 8 of 11 on sigmod08
+hello world! Process 9 of 11 on sigmod09
+hello world! Process 3 of 11 on sigmod03
+hello world! Process 6 of 11 on sigmod06
+hello world! Process 5 of 11 on sigmod05
+hello world! Process 2 of 11 on sigmod02
+hello world! Process 7 of 11 on sigmod07
+
+//Not difficult to find that it's ok if processors(11) are more than nodes(10), and tasks are distributed  to nodes in the same order as config defined.
